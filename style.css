@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+* {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0px;
+    color: white;
+}
+body {
+    background-color: #00354B;
+}
+article {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    max-width: 800px;
+    margin: 20px auto 10vh;
+    font-size: 3pc;
+}
+nav a {
+    color: black;
+}
+@keyframes earth-bob {
+    from {top: -17vh}
+    to {top: -12vh}
+}
+.earth {
+    position: absolute;
+    left: -2vw;
+    width: 105vw;
+    z-index: -100;
+    animation: earth-bob 5s ease-in-out 0s infinite alternate;
+}
+h1 {
+    font-size: 4pc;
+}
+@keyframes lunar-bob {
+    from {bottom: -5vh;}
+    to {bottom: -10vh;}
+}
+.lunar {
+    position: relative;
+    z-index: -100;
+    animation: lunar-bob 7s ease-in-out 0s infinite alternate;
+}
