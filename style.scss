@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+* {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0px;
+    color: white;
+    h1 { font-size: 4pc; }
+    h2 { font-size: 3pc; }
+}
+body {
+    background-color: #00354B;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    max-width: 800px;
+    margin: 20px auto 10vh;
+    font-size: 3pc;
+    a { color: black; }
+}
+article {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    > div { margin-bottom: 10vh; }
+    .earth {
+        @keyframes earth-bob {
+            from {top: -17vh}
+            to {top: -12vh}
+        }
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        z-index: -100;
+        animation: earth-bob 5s ease-in-out 0s infinite alternate;
+    }
+    .sun {
+        $size: 25vw;
+        background-image: url('./art/SVG/sun.svg');
+        width: calc($size * 0.95);
+        height: $size;
+        margin: auto;
+        > div {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 50%;
+            height: 48%;
+            position: relative;
+            top: 25%;
+            left: 25.5%;
+            > img { width: 100%; }
+        }
+    }
+    .lunar {
+        @keyframes lunar-bob {
+            from {bottom: -5vh;}
+            to {bottom: -10vh;}
+        }
+        position: relative;
+        z-index: -100;
+        animation: lunar-bob 7s ease-in-out 0s infinite alternate;
+    }
+}
