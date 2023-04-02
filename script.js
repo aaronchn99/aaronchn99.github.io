@@ -5,4 +5,3 @@ const scrollAtEarth = () => {
 
 scrollAtEarth();
 document.addEventListener('scroll', scrollAtEarth);
-

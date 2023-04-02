@@ -37,9 +37,27 @@ body {
             margin: auto;
             max-width: 800px;
             a {
+                display: inline-block;
+                position: relative; // Positions ::after relative to <a> element
                 color: black;
                 text-decoration: none;
                 font-size: 2pc;
+                &:hover {
+                    &::after {
+                        transform: scaleX(1);
+                        transition: transform 0.3s ease-in;
+                    }
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    transform: scaleX(0);
+                    border-bottom: 3px solid;
+                    transition: transform 0.3s ease-out;
+                }
             }
         }
         &.fixed {
