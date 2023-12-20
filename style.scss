@@ -8,8 +8,10 @@ $back-color-em: #001C28;
     font-family: 'Space Grotesk', sans-serif;
     margin: 0px;
     color: white;
-    h1 { font-size: 4pc; }
-    h2 { font-size: 3pc; }
+    h1 { font-size: 4pc; margin-bottom: 20px; }
+    h2 { font-size: 3pc; margin-bottom: 15px; }
+    h3 { font-size: 2pc; margin-bottom: 15px; }
+    p  { font-size: 1.2pc; margin-bottom: 10px; }
 }
 body {
     background-color: $back-color;
@@ -71,9 +73,15 @@ body {
     }
     article {
         text-align: center;
-        max-width: 800px;
         margin: auto;
-        > div { margin-bottom: 20vh; }
+        > div { 
+            > * {
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            margin-bottom: 10vh;
+        }
         .earth {
             @keyframes earth-bob {
                 from {top: -15vh}
@@ -87,9 +95,12 @@ body {
         }
         .sun {
             $size: 25vw;
+            $min-size: 360px;
             background-image: url('./art/SVG/sun.svg');
-            width: calc($size * 0.95);
+            width: calc($size * 0.962);
             height: $size;
+            min-width: calc($min-size * 0.962);
+            min-height: $min-size;
             margin: auto;
             > div {
                 border-radius: 50%;
@@ -100,6 +111,57 @@ body {
                 top: 25%;
                 left: 25.5%;
                 > img { width: 100%; }
+            }
+        }
+        .works {
+            background-color: $back-color-em;
+            max-width: 100vw;
+            display: grid;
+            grid-template-columns: 40px 1fr 40px;
+            gap: 40px;
+            .nav {
+                display: grid;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                background-color: $back-color-em;
+                &:hover{
+                    cursor: pointer;
+                    background-color: darken($back-color-em, 2%);
+                }
+            }
+            .entries {
+                display: grid;
+                position: relative;
+                .entry {
+                    display: grid;
+                    position: absolute;
+                    width: 100%;
+                    margin: auto;
+                    padding: 50px 0;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: 5pc 1fr;
+                    justify-items: center;
+                    align-items: center;
+                    .title { margin: auto; }
+                    .desc {
+                        margin: auto;
+                        width: 70%;
+                    }
+                    img { 
+                        grid-row: 1 / 3;
+                        grid-column: 2;
+                        margin: auto;
+                        width: 100%;
+                    }
+                    &:nth-child(2n) {
+                        img { grid-column: 1; }
+                    }
+                    &.left { transition: transform 0.8s ease-out; transform: translateX(-120%); }
+                    &.show { transition: transform 0.8s ease-out; transform: translateX(0); }
+                    &.right { transition: transform 0.8s ease-out; transform: translateX(120%); }
+                }
             }
         }
         #contact {
