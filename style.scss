@@ -14,6 +14,8 @@ $back-color-em: #001C28;
     p  { font-size: 1.2pc; margin-bottom: 10px; }
 }
 body {
+    overflow-x: hidden;
+    max-width: 100vw;
     background-color: $back-color;
     &[data-scroll-earth=false] nav.fixed {
         @keyframes nav-slide-in {
@@ -134,7 +136,9 @@ body {
                 height: 10vw;
                 min-width: 80px;
                 min-height: 80px;
-                background-color: white;
+                // background-color: white;
+                background-image: url("art/SVG/asteroid.svg");
+                &:nth-child(2n) { background-image: url("art/SVG/asteroid1.svg"); }
                 transform: translateX(110vw);
                 animation: 10s linear infinite orbit;
                 animation-delay: calc(var(--n) * 2s - 8s);
