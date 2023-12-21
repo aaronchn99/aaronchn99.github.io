@@ -1,6 +1,6 @@
 const docReady = f => {
     if (document.readyState === "complete" || document.readyState === "interactive") {
-        setTimeout(f, 1);
+        setTimeout(f, 2);
     } else {
         document.addEventListener("DOMContentLoaded", f);
     }
@@ -17,7 +17,7 @@ docReady(() => {
     window.addEventListener('resize', () => {
         document.getElementsByClassName("entries")[0].style.height = `${document.getElementsByClassName("entry")[0].scrollHeight}px`
     });
-    window.dispatchEvent(new Event('resize'));
+    setTimeout(() => window.dispatchEvent(new Event('resize')), 1);
 
     const worksNavClick = (e) => {
         const direction = e.currentTarget.classList[1];
