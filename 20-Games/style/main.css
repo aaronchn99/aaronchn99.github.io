@@ -550,6 +550,10 @@ video {
   position: sticky;
 }
 
+.float-end{
+  float: inline-end;
+}
+
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -569,6 +573,22 @@ video {
 
 .mt-7{
   margin-top: 1.75rem;
+}
+
+.mt-auto{
+  margin-top: auto;
+}
+
+.mt-32{
+  margin-top: 8rem;
+}
+
+.mt-36{
+  margin-top: 9rem;
+}
+
+.ml-auto{
+  margin-left: auto;
 }
 
 .flex{
