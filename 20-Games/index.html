@@ -2,34 +2,36 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link href="style/main.css" rel="stylesheet">
+        <link href="/20-Games/style/main.css" rel="stylesheet">
     </head>
     <body class="bg-space-blue-100 text-white">
         <header class="sticky bg-space-blue-200 px-5 xl:px-32 py-5 flex gap-x-3 shadow-xl">
-            <img class="w-auto h-full" src="art/img/Logo.png" />
+            <img class="w-auto h-full" src="/20-Games/art/img/Logo.png" />
             <h1 class="text-2xl sm:text-4xl">20 Games Challenge</h1>
         </header>
         <main class="flex flex-row mx-5 xl:m-auto py-10 max-w-screen-xl">
             <sidebar class="hidden md:flex flex-col text-lg w-52 shrink-0">
-                <a class="hover:underline" href="./index.html">Summary</a>
-                <a class="hover:underline" href="./tools.html">Engines and Tools</a>
+                <a class="link" href="/20-Games/">Summary</a>
+                <a class="link" href="/20-Games/tools.html">Engines and Tools</a>
                 <a>The Games</a>
                 <div class="pl-10 flex flex-col">
-                    <a class="hover:underline" href="./Pong.html">Pong</a>
-                    <a class="hover:underline" href="./Breakout.html">Breakout</a>
+                    <a class="link" href="/20-Games/games/Pong.html">Pong</a>
+                    <a class="link" href="/20-Games/games/Breakout.html">Breakout</a>
                 </div>
             </sidebar>
-            <article class="text-lg bg-space-blue-150 p-10 rounded">
+            <article class="text-lg bg-space-blue-150 p-10 rounded w-full">
                 <h1 class="text-4xl mt-10 mb-5">The 20 Games Challenge</h1>
                 <p class="mb-3">
-                    The 20 Games Challenge is just as it says on the tin: Pick from a curated list of video games and develop them using the engine of your choice.
-                    It aims to provide exposure to various video game mechanics and development tasks, giving you the opportunity to build the skills needed.
-                    To provide gradual progression, the challenge also includes a 10 step program where you choose and develop 10 games of increasing complexity and scope.
-                    The full list of curated games and more can be found out <a class="hover:underline font-bold" href="https://20_games_challenge.gitlab.io/">here</a>.
+                    The 20 Games Challenge is just as it says on the tin: Pick from a curated list of video games (the aim is 20 games, but they recommend to start with 10 games) and develop them using a chosen game engine.
+                    Created by <a class="link" href="https://twitter.com/Matt_SDG_Games">@Matt_SDG_Games</a>, it aims to provide exposure to various video game mechanics and development tasks,
+                    providing the opportunity to build the skills needed to develop your own video game.
+                    To provide gradual progression, the challenge includes a 10 step program to choose and develop 10 games of increasing complexity and scope.
+                    The full list of curated games and more can be found out <a class="link" href="https://20_games_challenge.gitlab.io/">here</a>.
                 </p>
                 <h2 class="text-2xl mt-7 mb-3 font-bold">Why did I take part?</h2>
                 <p class="mb-3">
                     Simple! I love video games and want to have a crack at making some popular games by myself.
+                    Furthermore, it's also a great exercise to further build my software development skills, such as refactoring, building tools and automation of tasks.
                 </p>
                 <h2 class="text-2xl mt-7 mb-3 font-bold">Let's see the games!</h2>
                 <p class="mb-3">
@@ -37,13 +39,13 @@
                     No download necessary! Controls will be explained below the game panel. I also write a bit about what goes into developing these games if you are interested.
                 </p>
                 <p class="mb-3">
-                    If you do encounter any problems while playing these games, or you found anything else wrong on the site, feel free to shoot me an email:
-                    <a class="hover:underline font-bold" href="mailto:pui.chan28@hotmail.com">pui.chan28@hotmail.com</a>
+                    If you do encounter any problems while playing these games, or you found anything else wrong on this site, feel free to shoot me an email:
+                    <a class="link" href="mailto:pui.chan28@hotmail.com">pui.chan28@hotmail.com</a>
                 </p>
             </article>
         </main>
         <footer class="px-5 xl:px-32 py-10 bg-space-blue-150 shadow-[0_-1px_10px_1px_rgba(0,0,0,0.5)]">
-            <span>Written by Pui Chan</span>
+            <span>Written by Pui Chan using TailwindCSS</span>
         </footer>
     </body>
 </html>

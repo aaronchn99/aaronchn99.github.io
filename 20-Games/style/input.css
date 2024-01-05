@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a.link {
+    @apply hover:underline cursor-pointer font-bold
+}
