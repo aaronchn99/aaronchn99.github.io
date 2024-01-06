@@ -9,6 +9,20 @@
     <lastBuildDate>Fri, 05 Jan 2024 23:40:58 +0000</lastBuildDate>
     <atom:link href="https://aaronchn99.github.io/20-Games/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Tools</title>
+      <link>https://aaronchn99.github.io/20-Games/tools/</link>
+      <pubDate>Sat, 06 Jan 2024 04:10:39 +0000</pubDate>
+      <guid>https://aaronchn99.github.io/20-Games/tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Breakout</title>
+      <link>https://aaronchn99.github.io/20-Games/games/breakout/</link>
+      <pubDate>Sat, 06 Jan 2024 03:41:57 +0000</pubDate>
+      <guid>https://aaronchn99.github.io/20-Games/games/breakout/</guid>
+      <description>Breakout</description>
+    </item>
+    <item>
       <title>Pong</title>
       <link>https://aaronchn99.github.io/20-Games/games/pong/</link>
       <pubDate>Fri, 05 Jan 2024 23:41:57 +0000</pubDate>
