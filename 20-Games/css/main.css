@@ -550,13 +550,13 @@ video {
   position: sticky;
 }
 
-.float-end{
-  float: inline-end;
-}
-
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .mb-3{
@@ -567,28 +567,20 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.ml-auto{
+  margin-left: auto;
+}
+
 .mt-10{
   margin-top: 2.5rem;
-}
-
-.mt-7{
-  margin-top: 1.75rem;
-}
-
-.mt-auto{
-  margin-top: auto;
-}
-
-.mt-32{
-  margin-top: 8rem;
 }
 
 .mt-36{
   margin-top: 9rem;
 }
 
-.ml-auto{
-  margin-left: auto;
+.mt-7{
+  margin-top: 1.75rem;
 }
 
 .flex{

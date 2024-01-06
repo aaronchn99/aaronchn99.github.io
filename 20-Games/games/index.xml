@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Games on My New Hugo Site</title>
+    <link>https://aaronchn99.github.io/20-Games/games/</link>
+    <description>Recent content in Games on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 06 Jan 2024 00:42:30 +0000</lastBuildDate>
+    <atom:link href="https://aaronchn99.github.io/20-Games/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pong</title>
+      <link>https://aaronchn99.github.io/20-Games/games/pong/</link>
+      <pubDate>Fri, 05 Jan 2024 23:41:57 +0000</pubDate>
+      <guid>https://aaronchn99.github.io/20-Games/games/pong/</guid>
+      <description>Pong</description>
+    </item>
+  </channel>
+</rss>

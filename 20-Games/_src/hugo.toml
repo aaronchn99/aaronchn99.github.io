@@ -1,0 +1,7 @@
+baseURL = 'https://aaronchn99.github.io/20-Games/'
+languageCode = 'en-gb'
+title = 'My New Hugo Site'
+publishDir = '../'
+[params]
+    main_css = 'css/main.css'
+    favicon = 'img/favicon.png'

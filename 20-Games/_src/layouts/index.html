@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link href="/20-Games/style/main.css" rel="stylesheet">
-        <link rel="icon" href="/20-Games/art/img/favicon.png">
-        <title>Page Title goes here</title>
+        <link href="{{ absURL .Site.Params.main_css }}" rel="stylesheet">
+        <link rel="icon" href="{{ .Site.Params.favicon }}">
+        <title>{{.Title}}</title>
     </head>
     <body class="bg-space-blue-100 text-white">
         <header class="sticky bg-space-blue-200 px-5 xl:px-32 py-5 flex gap-x-3 shadow-xl" id="top">
@@ -23,7 +23,7 @@
                 <a class="link mt-36" href="/">< Back to Portfolio</a>
             </sidebar>
             <article class="text-lg bg-space-blue-150 p-10 rounded w-full">
-                <h1>Content Goes Here</h1>
+                {{.Content}}
             </article>
         </main>
         <footer class="flex px-5 xl:px-32 py-10 bg-space-blue-150 shadow-[0_-1px_10px_1px_rgba(0,0,0,0.5)]">
