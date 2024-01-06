@@ -546,13 +546,63 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed{
+  position: fixed;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
 .sticky{
   position: sticky;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.m-auto{
+  margin: auto;
 }
 
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .mb-3{
@@ -579,6 +629,14 @@ video {
   margin-top: 1.75rem;
 }
 
+.mt-auto{
+  margin-top: auto;
+}
+
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -589,6 +647,22 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.min-h-full{
+  min-height: 100%;
+}
+
+.min-h-screen{
+  min-height: 100vh;
+}
+
+.min-h-\[calc\(100vh-64px\)\]{
+  min-height: calc(100vh - 64px);
+}
+
+.min-h-\[calc\(100vh-184px\)\]{
+  min-height: calc(100vh - 184px);
 }
 
 .w-52{
@@ -666,6 +740,10 @@ video {
   padding-left: 2.5rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -679,6 +757,21 @@ video {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-9xl{
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .font-bold{
