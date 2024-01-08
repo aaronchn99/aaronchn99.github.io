@@ -7,3 +7,12 @@
 a.link {
     @apply hover:underline cursor-pointer font-bold
 }
+article h1{
+    @apply text-4xl mt-7 mb-5
+}
+article h2{
+    @apply text-2xl mt-7 mb-3 font-bold
+}
+article p{
+    @apply mb-3
+}
