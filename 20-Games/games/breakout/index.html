@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link href="https://aaronchn99.github.io/20-Games/css/main.css" rel="stylesheet">
         <link rel="icon" href="https://aaronchn99.github.io/20-Games/img/favicon.png">
+        <script src="https://kit.fontawesome.com/adfad35e1d.js" crossorigin="anonymous"></script>
         <title>Breakout</title>
     </head>
     <body class="bg-space-blue-100 text-white">
@@ -16,23 +17,54 @@
         <main class="flex flex-row mx-5 xl:m-auto py-10 max-w-screen-xl min-h-[calc(100vh-184px)]">
             
                 <sidebar class="hidden md:flex flex-col text-lg w-52 shrink-0">
-    <a class="link" href="https://aaronchn99.github.io/20-Games/">Summary</a>
-    <a class="link" href="https://aaronchn99.github.io/20-Games/tools/">Engines and Tools</a>
+    <a class="link " href="https://aaronchn99.github.io/20-Games/">Summary</a>
+    <a class="link " href="https://aaronchn99.github.io/20-Games/tools/">Engines and Tools</a>
     <a>The Games</a>
     <div class="pl-10 flex flex-col">
         
-        <a class="link" href="https://aaronchn99.github.io/20-Games/games/pong/">Pong</a>
+        <a class="link " href="https://aaronchn99.github.io/20-Games/games/pong/">Pong</a>
         
-        <a class="link" href="https://aaronchn99.github.io/20-Games/games/breakout/">Breakout</a>
+        <a class="link underline" href="https://aaronchn99.github.io/20-Games/games/breakout/">Breakout</a>
         
     </div>
     <a class="link mt-36" href="https://aaronchn99.github.io/">&lt; Back to Portfolio</a>
 </sidebar>
-                <article class="text-lg bg-space-blue-150 p-10 rounded w-full">
+                <article class="text-lg bg-space-blue-150 p-10 pt-0 rounded w-full">
                     
     <article class="text-lg bg-space-blue-150 p-10 rounded w-full">
-        <p>Breakout</p>
+        <h1>Breakout</h1>
 
+<a href="https://aaronchn99.github.io/Breakout/" class="flex gap-10 m-10 p-10 rounded-full bg-space-blue-100 hover:shadow-2xl" target="_blank">
+    <i class="fa-solid fa-2xl fa-gamepad my-auto"></i>
+    <label class="hover:cursor-pointer">Play Breakout</label>
+    <i class="fa-solid fa-2xl fa-chevron-right my-auto ml-auto"></i>
+</a>
+<h2>Controls</h2>
+<p>Move Left - Left/A key</p>
+<p>Move Right - Right/D key</p>
+<h2>More Info</h2>
+<h3>Custom Editor</h3>
+<p>
+    One very powerful feature of Godot is their collection of prebuilt UI elements.
+    This makes it quick and easy to build a level editor program that works specifically for my level format
+    (Fun Fact: This is why the Godot editor itself runs on the Godot engine. Inception!)
+</p>
+<div class="grid grid-flow-col grid-cols-2 gap-2">
+    <img class="basis" src="https://aaronchn99.github.io/20-Games/img/breakout-editor.png" />
+    <div>
+        <p>
+            The editor reuses the walls used in game and presents a grid where the
+            bricks would be placed in game. Each square is clickable, and the brick type
+            and colour can be changed. The size of the grid can be changed and levels
+            can be created or deleted. Once done, the levels can be saved and it's immediately
+            ready to be played.
+        </p>
+        <p>
+            This proved to be very useful for level design, as levels can be visualised
+            and changes can be quickly made with less hassle, saving time.
+        </p>
+    </div>
+</div>
     </article>
 
                 </article>
