@@ -13,6 +13,9 @@ article h1{
 article h2{
     @apply text-2xl mt-7 mb-3 font-bold
 }
+article h3{
+    @apply text-xl mt-7 mb-2 font-bold
+}
 article p{
     @apply mb-3
 }
