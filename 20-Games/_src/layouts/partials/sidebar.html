@@ -1,10 +1,10 @@
 <sidebar class="hidden md:flex flex-col text-lg w-52 shrink-0">
-    <a class="link" href="{{ .Site.Home.Permalink }}">Summary</a>
-    <a class="link" href="{{ (.Site.GetPage "tools").Permalink }}">Engines and Tools</a>
+    <a class="link {{if .Page.Eq .Site.Home}}underline{{end}}" href="{{ .Site.Home.Permalink }}">Summary</a>
+    <a class="link {{if .Page.Eq (.Site.GetPage "tools")}}underline{{end}}" href="{{ (.Site.GetPage "tools").Permalink }}">Engines and Tools</a>
     <a>The Games</a>
     <div class="pl-10 flex flex-col">
         {{ range (where .Site.RegularPages "Section" "games").ByDate }}
-        <a class="link" href="{{ .Permalink }}">{{ .Title }}</a>
+        <a class="link {{if $.Page.Eq . }}underline{{end}}" href="{{ .Permalink }}">{{ .Title }}</a>
         {{end}}
     </div>
     <a class="link mt-36" href="{{ absURL "/" }}">< Back to Portfolio</a>

@@ -1,4 +1,8 @@
 <!-- <div>
     <label>{{ .Get 0 }}</label>
 </div> -->
-<a href="{{ .Get 1 }}" class="link" target="_blank">{{ .Get 0 }}</a>
+<a href="{{ .Get 1 }}" class="flex gap-10 m-10 p-10 rounded-full bg-space-blue-100 hover:shadow-2xl" target="_blank">
+    <i class="fa-solid fa-2xl fa-gamepad my-auto"></i>
+    <label class="hover:cursor-pointer">{{ .Get 0 }}</label>
+    <i class="fa-solid fa-2xl fa-chevron-right my-auto ml-auto"></i>
+</a>

@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link href="{{ absURL .Site.Params.main_css }}" rel="stylesheet">
         <link rel="icon" href="{{ absURL .Site.Params.favicon }}">
+        <script src="https://kit.fontawesome.com/adfad35e1d.js" crossorigin="anonymous"></script>
         <title>{{.Title}}</title>
     </head>
     <body class="bg-space-blue-100 text-white">
@@ -16,7 +17,7 @@
         <main class="flex flex-row mx-5 xl:m-auto py-10 max-w-screen-xl min-h-[calc(100vh-184px)]">
             {{if not (eq .Page.Title "404 Page not found")}}
                 {{ partial "sidebar" . }}
-                <article class="text-lg bg-space-blue-150 p-10 rounded w-full">
+                <article class="text-lg bg-space-blue-150 p-10 pt-0 rounded w-full">
                     {{ block "main" . }}
                     {{end}}
                 </article>
