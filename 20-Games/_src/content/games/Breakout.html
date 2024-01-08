@@ -1,0 +1,33 @@
++++
+title = 'Breakout'
+date = 2024-01-06T03:41:57Z
+draft = true
++++
+<h1>Breakout</h1>
+{{< playButton "Play Breakout" "https://aaronchn99.github.io/Breakout/" >}}
+<h2>Controls</h2>
+<p>Move Left - Left/A key</p>
+<p>Move Right - Right/D key</p>
+<h2>More Info</h2>
+<h3>Custom Editor</h3>
+<p>
+    One very powerful feature of Godot is their collection of prebuilt UI elements.
+    This makes it quick and easy to build a level editor program that works specifically for my level format
+    (Fun Fact: This is why the Godot editor itself runs on the Godot engine. Inception!)
+</p>
+<div class="grid grid-flow-col grid-cols-2 gap-2">
+    <img class="basis" src="{{< absURL "img/breakout-editor.png" >}}" />
+    <div>
+        <p>
+            The editor reuses the walls used in game and presents a grid where the
+            bricks would be placed in game. Each square is clickable, and the brick type
+            and colour can be changed. The size of the grid can be changed and levels
+            can be created or deleted. Once done, the levels can be saved and it's immediately
+            ready to be played.
+        </p>
+        <p>
+            This proved to be very useful for level design, as levels can be visualised
+            and changes can be quickly made with less hassle, saving time.
+        </p>
+    </div>
+</div>
