@@ -242,4 +242,11 @@ body {
             animation: lunar-bob 7s ease-in-out 0s infinite alternate;
         }
     }
+    img.icon {
+        width:38px;
+        height:auto;
+        &.white { filter:brightness(1000%); }
+        &.mr { margin-right:20px; }
+        &.st { position: relative;top: 10px; }
+    }
 }
