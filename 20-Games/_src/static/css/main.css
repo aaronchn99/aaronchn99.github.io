@@ -546,8 +546,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative{
+  position: relative;
+}
+
 .sticky{
   position: sticky;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .m-10{
@@ -766,6 +778,18 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-shadow{
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 a.link{
   cursor: pointer;
   font-weight: 700;
@@ -800,6 +824,38 @@ article h3{
 
 article p{
   margin-bottom: 0.75rem;
+}
+
+.hover\:-left-10:hover{
+  left: -2.5rem;
+}
+
+.hover\:-top-10:hover{
+  top: -2.5rem;
+}
+
+.hover\:-left-5:hover{
+  left: -1.25rem;
+}
+
+.hover\:-top-5:hover{
+  top: -1.25rem;
+}
+
+.hover\:-left-2:hover{
+  left: -0.5rem;
+}
+
+.hover\:-left-1:hover{
+  left: -0.25rem;
+}
+
+.hover\:-top-3:hover{
+  top: -0.75rem;
+}
+
+.hover\:-top-2:hover{
+  top: -0.5rem;
 }
 
 @keyframes bounce{
