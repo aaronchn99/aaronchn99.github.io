@@ -13,21 +13,21 @@
       <link>https://aaronchn99.github.io/20-Games/tools/</link>
       <pubDate>Sat, 06 Jan 2024 04:10:39 +0000</pubDate>
       <guid>https://aaronchn99.github.io/20-Games/tools/</guid>
-      <description>Engines and Tools used </description>
+      <description>Engines and Tools used This is a breakdown of all the Game Engines and other tools I&#39;ve used to develop these games, with a brief description and comments about my experiences using these tools. Godot Engine Unity Engine Level Designer Toolkit (LDtk)</description>
     </item>
     <item>
       <title>Breakout</title>
       <link>https://aaronchn99.github.io/20-Games/games/breakout/</link>
       <pubDate>Sat, 06 Jan 2024 03:41:57 +0000</pubDate>
       <guid>https://aaronchn99.github.io/20-Games/games/breakout/</guid>
-      <description>Breakout Play Breakout&#xD;Controls Move Left - Left/A key&#xA;Move Right - Right/D key&#xA;More Info Custom Editor One very powerful feature of Godot is their collection of prebuilt UI elements. This makes it quick and easy to build a level editor program that works specifically for my level format (Fun Fact: This is why the Godot editor itself runs on the Godot engine. Inception!) The editor reuses the walls used in game and presents a grid where the bricks would be placed in game.</description>
+      <description>Breakout Play Breakout&#xD;Controls Move Left - Left/A key&#xA;Move Right - Right/D key&#xA;More Info Similar to Pong, this is a single player game where you shoot the ball to try and break all the blocks. Start with 3 lives and you lose a life if you miss the ball. Custom Editor One very powerful feature of Godot is their collection of prebuilt UI elements. This makes it quick and easy to build a level editor program that works specifically for my level format (Fun Fact: This is why the Godot editor itself runs on the Godot engine.</description>
     </item>
     <item>
       <title>Pong</title>
       <link>https://aaronchn99.github.io/20-Games/games/pong/</link>
       <pubDate>Fri, 05 Jan 2024 23:41:57 +0000</pubDate>
       <guid>https://aaronchn99.github.io/20-Games/games/pong/</guid>
-      <description>Pong Play Pong&#xD;Controls Move Paddle Up - Up/W key&#xA;Move Paddle Down - Down/S key&#xA;More Info A simple single player paddle game, based on the early Pong games in the 1970s. Move your paddle up or down to return the ball to the AI opponent, aim to shoot the ball past the opponent&#39;s paddle, first to 10 points wins. My first game developed using Godot, where I leveraged my experience with Unity to get familiar with the game engine.</description>
+      <description>Pong Play Pong&#xD;Controls Move Paddle Up - Up/W key&#xA;Move Paddle Down - Down/S key&#xA;More Info A simple single player paddle game, based on the early Pong games in the 1970s. Move your paddle up or down to return the ball to the AI opponent, aim to shoot the ball past the opponent&#39;s paddle, first to 10 points wins. My first experience using Godot This was the first game I developed using Godot.</description>
     </item>
   </channel>
 </rss>

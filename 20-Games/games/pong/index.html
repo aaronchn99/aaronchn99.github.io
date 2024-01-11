@@ -35,7 +35,7 @@
         <h1>Pong</h1>
 <video src="https://aaronchn99.github.io/20-Games/media/pong-preview.mp4" autoplay loop></video>
 
-<a href="https://aaronchn99.github.io/Pong/" class="flex gap-10 m-10 p-10 rounded-full bg-space-blue-100 hover:shadow-2xl" target="_blank">
+<a href="https://aaronchn99.github.io/Pong/" class="flex gap-10 m-10 p-10 rounded-full bg-space-blue-100 relative top-0 left-0 hover:-top-2 hover:-left-1 hover:shadow-2xl transition-all" target="_blank">
     <i class="fa-solid fa-2xl fa-gamepad my-auto"></i>
     <label class="hover:cursor-pointer">Play Pong</label>
     <i class="fa-solid fa-2xl fa-chevron-right my-auto ml-auto"></i>
@@ -48,13 +48,34 @@
     A simple single player paddle game, based on the early Pong games in the 1970s.
     Move your paddle up or down to return the ball to the AI opponent, aim to shoot the ball past the opponent's paddle, first to 10 points wins.
 </p>
-<p>
-    My first game developed using Godot, where I leveraged my experience with Unity to get familiar with the game engine.
-    In implementing the opponent, I experimented with different AI techniques, tweaking with various handicap techniques so to give the player a chance. 
-</p>
 <h3>My first experience using Godot</h3>
 <p>
-
+    This was the first game I developed using Godot. Coming from a Unity background, the UI looks familiar from first glance as it also shows the
+    game's object tree, the game view and an object inspector. Similar to Unity, game objects (Nodes) are arranged in a hierarchical structure
+    and a group of Nodes (Scenes) can be saved into Scene files, which are like Prefabs in Unity. The main difference is Signals: Nodes have a set
+    of events, which can be bound to a method in another Node. I delve more about my experiences using Godot
+    <a class="link" href="https://aaronchn99.github.io/20-Games/tools/">here</a>
+</p>
+<h3>AI opponent</h3>
+<p>
+    Pong was a great opportunity to experiment with AI. At first I started simple, by having the opponent follow the ball. However, I felt this
+    was too perfect, so I created variations of this FOLLOW AI with different handicaps:
+</p>
+<p>
+    One way was to slightly corrupt the opponent's control. Specifically this means there is a small chance the paddle will move in the opposite
+    direction to where the AI wants to go. It reduces the accuracy and slows down the paddle, thus increasing the chance of missing.
+</p>
+<p>
+    Another way was to make the opponent controls sticky. This means the paddle will keep on moving in the same direction for a set period of time.
+    This also reduces the accuracy of the paddle, however it has a better chance of hitting the ball than the CORRUPT AI.
+</p>
+<p>
+    Afterwards, I had a friend playtest the game. They found the AI components enjoyable, however they were still able to beat the FOLLOW AI.
+    While playtesting the game myself, I realised I tend to move the paddle ahead of the ball, trying to predict where the ball would go.
+    This gave me an idea of having the opponent calculate the trajectory of the ball. By using the ball's velociy to extrapolate its position
+    and reflecting the trajectory at the floor and ceiling, I created this TRAJECTORY AI. This was proven to be near perfect at returning the ball
+    and was near impossible to play against, so I created a variation which does not reflect the ball's trajectory. It was still difficult, but had a
+    chance of missing the ball.
 </p>
     </article>
 
